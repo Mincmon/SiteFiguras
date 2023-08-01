@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.caixas {
+display: flex;
+background-color: blue;
+height: 400px;
+align-items: center;
+flex-wrap: wrap;
+
+}
+.caixa {
+    background-color: beige;
+height: 160px;
+width: 160px;
+border-radius: 10px;
+align-items: center;
+text-align: center;
+margin: 20px 20px;
+transition: ease-in-out 0.3s;
+}
+
+.caixa:hover {
+    background-color: white;
+    border-radius: 7px;
+    height: 200px;
+    width: 200px;
+    box-shadow: 10px 1px 20px 1px black;
+}
+
+.imagem {
+    margin-top: 15%;
+    height: 90px;
+    width: 90px;
+}
+
+.texto {
+    margin-top: 5%;
+}
+
+#ret {
+    color: red;
+}
+
+#tri {
+    color: red;
+}
+
+#cir {
+    color: red;
+}
+
+#trap {
+    color: red;
+}
+
+#los {
+    color: red;
+}
+
+    </style>
+</head>
+<body>
+    <section class="caixas">
+        <div class="caixa" onclick="ret()">
+            <img src="Retângulo.jpg" alt="" class="imagem">
+            <h4 class="texto">Retângulo</h4>
+            <h5 id="ret"></h5>
+        </div>
+        <div class="caixa" onclick="tri()">
+            <img src="Triângulo.jpg" alt="" class="imagem">
+            <h4 class="texto">Triângulo</h4>
+            <h5 id="tri"></h5>
+        </div>
+        <div class="caixa" onclick="cir()">
+            <img src="Circulo.jpg" alt="" class="imagem">
+            <h4 class="texto">Circulo</h4>
+            <h5 id="cir"></h5>
+        </div>
+        <div class="caixa" onclick="trap()">
+            <img src="Trapézio.jpg" alt="" class="imagem">
+            <h4 class="texto">Trapézio</h4>
+            <h5 id="trap"></h5>
+        </div>
+        <div class="caixa" onclick="los()">
+            <img src="Losango.jpg" alt="" class="imagem">
+            <h4 class="texto">Losango</h4>
+            <h5 id="los"></h5>
+        </div>
+    </section>
+</body>
+</html>
